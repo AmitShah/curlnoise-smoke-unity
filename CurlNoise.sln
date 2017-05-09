@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurlNoise", "Assembly-CSharp-firstpass.csproj", "{2FDA4BBA-052E-1C06-7DF4-D55A6C354F24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurlNoise", "Assembly-CSharp.csproj", "{A149D203-8F10-0D79-E752-47D393475A7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurlNoise", "Assembly-CSharp-Editor-firstpass.csproj", "{ED508D8A-116A-1727-01C0-0B5DD8A386C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FDA4BBA-052E-1C06-7DF4-D55A6C354F24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FDA4BBA-052E-1C06-7DF4-D55A6C354F24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FDA4BBA-052E-1C06-7DF4-D55A6C354F24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FDA4BBA-052E-1C06-7DF4-D55A6C354F24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A149D203-8F10-0D79-E752-47D393475A7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A149D203-8F10-0D79-E752-47D393475A7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A149D203-8F10-0D79-E752-47D393475A7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A149D203-8F10-0D79-E752-47D393475A7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED508D8A-116A-1727-01C0-0B5DD8A386C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED508D8A-116A-1727-01C0-0B5DD8A386C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED508D8A-116A-1727-01C0-0B5DD8A386C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED508D8A-116A-1727-01C0-0B5DD8A386C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
