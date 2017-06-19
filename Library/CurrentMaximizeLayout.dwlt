@@ -22,10 +22,10 @@ MonoBehaviour:
     y: 30
     width: 1183
     height: 618
-  m_MinSize: {x: 913, y: 421}
-  m_MaxSize: {x: 22008, y: 10000}
+  m_MinSize: {x: 917, y: 421}
+  m_MaxSize: {x: 22012, y: 10021}
   vertical: 0
-  controlID: 20267
+  controlID: 40597
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 421}
   m_MaxSize: {x: 4002, y: 8021}
   vertical: 1
-  controlID: 20268
+  controlID: 40598
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -416,8 +416,8 @@ MonoBehaviour:
     y: 0
     width: 234
     height: 618
-  m_MinSize: {x: 230, y: 250}
-  m_MaxSize: {x: 10000, y: 10000}
+  m_MinSize: {x: 234, y: 271}
+  m_MaxSize: {x: 10004, y: 10021}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
@@ -552,7 +552,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 245.97461}
+    m_ScrollPosition: {x: 0, y: 757}
     m_GridSize: 43
   m_DirectoriesAreaWidth: 110
 --- !u!114 &13
@@ -606,7 +606,7 @@ MonoBehaviour:
     y: 94
     width: 275
     height: 597
-  m_ScrollPosition: {x: 0, y: 0}
+  m_ScrollPosition: {x: 0, y: 338.02063}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 330

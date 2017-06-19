@@ -30,7 +30,7 @@
 			    return tex2D( _NoiseTex, uv/oct );
 			}
 
-			float2 e(){ return float2(_NoiseTex_TexelSize.x *250., 0.);}//float2(1./10., 0.);
+			float2 e(){ return float2(1./20., .0); }
 
 			//learn how to sample texel
 			//https://forum.unity3d.com/threads/obtaining-screen-space-texel-size.365304/
@@ -48,12 +48,12 @@
 
 
 				//move 0.15 over frames
-				float2 off = float2(.0,.25) * unity_DeltaTime.x;//_Time.y;//* unity_DeltaTime.y;
+				float2 off = float2(.0,.5) * unity_DeltaTime.x;//_Time.y;//* unity_DeltaTime.y;
 				//col.xy = tex2D(_MainTex, i.uv - off);// - clamp(0.,1.,off));
 				float oct = 1.25;
-				float2 curl1 = 0.001+float2( dy(i.uv,oct).x, -dx(i.uv,oct).x )*oct/25.25;
+				float2 curl1 = 0.001*float2( dy(i.uv,oct).x, -dx(i.uv,oct).x )*oct;
 				off+= curl1;
-//				
+				off *= .4;
 				//col.xy = tex2D(_MainTex,i.uv - off);
 				//col.xy =off;//+curl1;
 				//if(length(i.uv - float2(0.5,0.5 + _SinTime.y * 0.5))  < 0.2){
@@ -65,9 +65,8 @@
 					//col.xy = off;
 				//}
 
-				col = 0.98*tex2D( _MainTex, i.uv-off);
+				col = 0.999 * tex2D( _MainTex, i.uv-off);
 
-//			
 //				if(length(i.uv - float2(0.5,0.5)) < 0.1){
 //					col = 1 - col;
 //				}else{
