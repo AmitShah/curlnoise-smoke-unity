@@ -59,10 +59,10 @@ public class curlnoise : MonoBehaviour {
 				GL.LoadPixelMatrix (0, buffer.width, buffer.height, 0);            //Setup a matrix for pixel-correct rendering.
 				//Draw my stampTexture on my RenderTexture positioned by posX and posY.
 				Graphics.DrawTexture (
-				new Rect (Input.mousePosition.x - stamp.width / 16,
-					(buffer.height - Input.mousePosition.y) - stamp.height / 16,
-						stamp.width/16,
-						stamp.height/16), stamp);
+				new Rect (Input.mousePosition.x - stamp.width / 32,
+					(buffer.height - Input.mousePosition.y) - stamp.height / 32,
+						stamp.width/32,
+						stamp.height/32), stamp);
 				GL.PopMatrix ();                                //Restores both projection and modelview matrices off the top of the matrix stack.
 				RenderTexture.active = null;   
 

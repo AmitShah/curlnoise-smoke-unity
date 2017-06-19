@@ -65,7 +65,7 @@
 					//col.xy = off;
 				//}
 
-				col = 0.99 * tex2D( _MainTex, i.uv-off);
+				col = 0.98 * tex2D( _MainTex, i.uv-off);
 
 //				if(length(i.uv - float2(0.5,0.5)) < 0.1){
 //					col = 1 - col;
