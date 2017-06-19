@@ -42,6 +42,35 @@ public class curlnoise : MonoBehaviour {
 			Graphics.Blit (temp, buffer);
 			Graphics.Blit (buffer, destination);
 		}
+
+
+	}
+
+	//correctly stamping to a rendertexture
+	//http://answers.unity3d.com/questions/327984/graphicsdrawtexture-to-rendertexture-not-working.html
+	void Update ()
+	{
+		
+		if (Input.GetMouseButton(0))
+		{
+			
+				RenderTexture.active = buffer;                      //Set my RenderTexture active so DrawTexture will draw to it.
+				GL.PushMatrix ();                                //Saves both projection and modelview matrices to the matrix stack.
+				GL.LoadPixelMatrix (0, buffer.width, buffer.height, 0);            //Setup a matrix for pixel-correct rendering.
+				//Draw my stampTexture on my RenderTexture positioned by posX and posY.
+				Graphics.DrawTexture (
+				new Rect (Input.mousePosition.x - stamp.width / 16,
+					(buffer.height - Input.mousePosition.y) - stamp.height / 16,
+						stamp.width/16,
+						stamp.height/16), stamp);
+				GL.PopMatrix ();                                //Restores both projection and modelview matrices off the top of the matrix stack.
+				RenderTexture.active = null;   
+
+
+		}
+
+
+		                 //De-activate my RenderTexture.
 	}
 
 
