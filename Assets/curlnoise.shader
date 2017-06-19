@@ -27,7 +27,9 @@
 
 			float4 ssamp( float2 uv, float oct )
 			{
-			    return tex2D( _NoiseTex, uv/oct );
+				//TODO: If stationary add turbulence
+				float2 off = float2(.0,.5) * _Time.x;
+			    return tex2D( _NoiseTex, off+uv/oct );
 			}
 
 			float2 e(){ return float2(1./20., .0); }
